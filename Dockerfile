@@ -33,6 +33,11 @@ COPY run.sh /
 RUN chmod +x /run.sh
 
 
+# add a time stamp
+COPY set-time.sh /
+RUN chmod +x /set-time.sh
+RUN /set-time.sh
+
 VOLUME ["/etc/logstash","/var/log/logstash"]
 
 
