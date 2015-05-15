@@ -1,7 +1,7 @@
 Logstash  
 ========
 
-Base Docker image to run Logstash version 1.5.0.rc4-1
+Base Docker image to run Logstash version 1.5.0
 
 
 
