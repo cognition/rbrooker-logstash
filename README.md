@@ -7,9 +7,9 @@ Base Docker image to run Logstash version 1.5.0
 
 Usage
 -----
-
+```
 docker run -d -it -e ES='es' --link=es:es  --name="logstash" --volume=/opt/logstash:/etc/logstash rbrooker/logstash
-
+```
 
 Notes
 -----
