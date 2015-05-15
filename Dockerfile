@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM ubuntu:vivid
 
 MAINTAINER Ramon Brooker <rbrooker@aetherealmind.com>
 
@@ -13,8 +13,8 @@ RUN chmod +x /usr/sbin/policy-rc.d
 ENV LS_VERSION_MAJOR=1.5
 ENV LS_VERISON_MINOR=1.5.0.rc4-1
 
-# install need java run time 
-RUN apt-get update && apt-get install -y openjdk-7-jre-headless
+# install need java run time and update system 
+RUN apt-get update && apt-get -y upgrade &&apt-get install -y openjdk-7-jre-headless
 
 # get and install logstash
 ADD  http://download.elastic.co/logstash/logstash/packages/debian/logstash_${LS_VERISON_MINOR}_all.deb /
