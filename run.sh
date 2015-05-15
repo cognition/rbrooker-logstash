@@ -26,7 +26,7 @@ echo ""
 
 
 # run logstash
-/opt/logstash/bin/logstash -f /etc/logstash/conf.d/ 
+/opt/logstash/bin/logstash agent -f /etc/logstash/conf.d/ -l /var/log/logstash/logstash.log 
 #/etc/init.d/logstash start
 
 

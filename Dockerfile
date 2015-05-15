@@ -1,8 +1,5 @@
-FROM rbrooker/update-ubuntu
+FROM ubuntu:trusty
 
-
-
-FROM rbrooker/logstash-base
 MAINTAINER Ramon Brooker <rbrooker@aetherealmind.com>
 
 ENV DEBIAN_FRONTEND noninteractive
