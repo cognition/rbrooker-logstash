@@ -4,6 +4,7 @@ echo "$ES"
 
 if [[ ! -f /etc/logstash/.BASE ]]
 then 
+  touch  /etc/logstash/conf.d/initial.conf 
   cat > /etc/logstash/conf.d/initial.conf <<EOF
 input {
     file {
