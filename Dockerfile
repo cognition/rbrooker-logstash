@@ -37,8 +37,15 @@ RUN /set-time.sh
 
 VOLUME ["/etc/logstash","/var/log/logstash"]
 
+# ElasticSeach
+EXPOSE  9200:9300 
+# Syslog
+EXPOSE  514 
+# snmptrap
+EXPOSE 1062 
+# for when there is a need for an port open
+EXPOSE 8100:8150 
 
-EXPOSE  9200 9300 512
 
 CMD ["./run.sh"]
 
