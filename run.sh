@@ -2,6 +2,15 @@
 
 echo "$ES"
 
+if [ -z JAVA_OPS ]; then
+    echo "JAVA_OPTS=\"-Xmx1g\"" >> /etc/environment
+    set JAVA_OPTS="-Xms512m -Xmx1gm"
+    export _JAVA_OPTIONS="-Xmx1g" 
+fi
+
+
+
+
 if [[ ! -f /etc/logstash/.BASE ]]
 then 
   touch  /etc/logstash/conf.d/initial.conf 
