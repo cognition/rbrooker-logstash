@@ -35,7 +35,7 @@ Ramon Brooker <rbrooker@aetherealmind.com>
 
 
 
-!Important: tag 2.1 has errors, (not sure how to delete it, but fixed now) 
+!Important: tag 3.1 has errors, (not sure how to delete it, but fixed now) 
 
 
 
