@@ -28,8 +28,14 @@ Documentation
 * A really good book that helped me a lot, [The Logstash Book](http://www.logstashbook.com/), by James Turnbull
 
 
-
 Maintained by 
 -------------
 
 Ramon Brooker <rbrooker@aetherealmind.com>
+
+
+
+!Important: tag 2.1 has errors, (not sure how to delete it, but fixed now) 
+
+
+
