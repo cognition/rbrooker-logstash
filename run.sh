@@ -1,8 +1,17 @@
 #!/bin/bash
 
+if [ REBUILD == 1 ]; then 
+    echo "rebuild"
+   /usr/sbin/rabbitmq-server
+   exit 0
+fi
+
+
+
+
 echo "$ES"
 
-if [ -z JAVA_OPS ]; then
+if [ -z JAVA_OPTS ]; then
     echo "JAVA_OPTS=\"-Xmx1g\"" >> /etc/environment
     set JAVA_OPTS="-Xms512m -Xmx1gm"
     export _JAVA_OPTIONS="-Xmx1g" 
